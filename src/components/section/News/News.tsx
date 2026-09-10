@@ -145,12 +145,12 @@ export default function News() {
                     <div className="mt-auto flex items-center justify-between gap-3 pt-6">
                         <Link
                             href={`/${language}/news/${post.slug}`}
-                            className="shrink-0 whitespace-nowrap rounded-lg bg-white px-5 py-2 text-[14px] font-medium text-[#B42226] cursor-pointer shadow-md text-center"
+                            className="shrink-0 whitespace-nowrap rounded-lg bg-white px-5 py-2 text-[14px] font-medium text-[#1FAC4D] cursor-pointer shadow-md text-center"
                         >
                             {t.testimonials.readMore}
                         </Link>
 
-                        <span className="shrink-0 whitespace-nowrap text-[14px] text-[#B42226]">
+                        <span className="shrink-0 whitespace-nowrap text-[14px] text-[#1FAC4D]">
                             {new Date(
                                 post.publishedAt
                             ).toLocaleDateString("en-GB")}
@@ -164,18 +164,18 @@ export default function News() {
     return (
         <section
             id="news"
-            className="py-12.5 px-12.5 lg:px-25"
+            className="px-12.5 lg:px-25 mb-25"
         >
             <div className="flex flex-col gap-6 lg:gap-13">
 
                 {/* Header */}
                 <div className="flex flex-col lg:justify-center items-center gap-4 leading-12">
-                    <hr className="border-2 border-[#B42226] w-350 flex mb-30"/>
+                    <hr className="border-2 border-[#1FAC4D] w-350 flex mb-30"/>
                     <h1 className="text-[40px] lg:hidden font-semibold text-[#0C233E]">
                         {t.testimonials.title}
                     </h1>
 
-                    <h1 className="hidden lg:block text-[80px] font-semibold text-[#0C233E] pl-2">
+                    <h1 className="hidden lg:block mb-15 text-[80px] font-semibold text-[#0C233E] pl-2">
                         {t.testimonials.title}
                     </h1>
 
@@ -198,7 +198,7 @@ export default function News() {
                         <button
                             onClick={loadMore}
                             disabled={loading}
-                            className="rounded-lg bg-[#B42226] px-8 py-3 text-white transition hover:opacity-80 cursor-pointer disabled:opacity-50"
+                            className="rounded-lg bg-[#1FAC4D] px-9 py-4 text-[20px] text-white transition hover:opacity-80 cursor-pointer disabled:opacity-50"
                         >
                             {loading ? t.testimonials.loading : t.testimonials.loadMore}
                         </button>
