@@ -41,7 +41,7 @@ export default function Header(){
     return(
         <>
             <header className={isNewsPage ? "" : "lg:sticky lg:top-0 lg:z-50 lg:h-0"}>
-                <div className="sm:mx-auto flex h-20 items-center justify-between px-6">
+                <div className="sm:mx-auto flex h-20 items-center justify-between">
                     {/* Mobile */}
                     <div className="flex w-full items-center justify-between lg:hidden">
                         <Image src="/logo-new.png" width={119} height={34} alt="logo"/>
@@ -62,7 +62,7 @@ export default function Header(){
                         </div>
                     </div>
                     {/* Desktop */}
-                    <div className="hidden w-full items-center justify-between lg:flex bg-white text-[#222D65] lg:border-[#1FAC4D] lg:border-3 rounded-2xl px-11 py-5 mt-15 mx-10">
+                    <div className="hidden w-full items-center justify-between lg:flex bg-white text-[#222D65] lg:border-[#1FAC4D] lg:border-3 rounded-2xl px-11 py-5 mt-15">
                         <Image src="/logo-new.png" width={200} height={40} alt="logo" className="cursor-pointer"/>
                         <nav className="flex items-center gap-19">
                             <Link href={'#home'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[24px]">{t.header.home}</Link>
