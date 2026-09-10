@@ -26,8 +26,8 @@ const TM = {
 
     process:{
         title:'Proýektlarymyz',
-        subtitle_lg:'Biz köçeler, awtomobil ýollary we ulag baglanyşyklarynyň taslamalaryny düzmek, gurluşygyny geçirmek hem-de durkuny täzelemek boäunça, şeýle hem şäher we oba ýerlerini abadanlaşdyrmakda ýöriteleşýäris. Döwlet we milli maksatnamalaryny durmuşa geçirmäge işjeň gatnaşmak bilen, kompaniýamyz ilatymyzyň ýaşaýyş-durmuş şartlerini özgertmäge, gatnawlaryň howpsuzlygyny we rahatlygyny ýokarlandyrmaga gönükdirilen ygtybarly ýol-ulag altydüzümini döredýär',
-        subtitle:'Biz köçeler, awtomobil ýollary we ulag baglanyşyklarynyň taslamalaryny düzmek, gurluşygyny geçirmek hem-de durkuny täzelemek boäunça, şeýle hem şäher we oba ýerlerini abadanlaşdyrmakda ýöriteleşýäris'
+        subtitle_lg:'Biz gurluşyk-gurnama we taslama işlerinde ýöriteleşip, ýaşaýyş, önümçilik we infrastruktura taslamalaryny durmuşa geçirýäris. Gurluşyk ugry bilen bir hatarda, kompaniýa köpugurly maldarçylyk toplumyny ösdürýär hem-de derman önümleriniň lomaý we bölek söwdasy pudagynda iş alyp barýar. Dürli ugurlardaky taslamalary durmuşa geçirip, biz döwrebap desgalary döredýäris we önümçilik kuwwatlyklaryny ösdürýäris, Türkmenistanyň ykdysady we infrastruktura ösüşine öz goşandymyzy goşýarys',
+        subtitle:'Biz gurluşyk we taslama işlerinde ýöriteleşip, maldarçylyk önümçiligini we dermançylyk ugruny ösdürýäris hem-de döwrebap desgalary döredip, Türkmenistanyň ösüşine öz goşandymyzy goşýarys'
     },
 
     testimonials:{

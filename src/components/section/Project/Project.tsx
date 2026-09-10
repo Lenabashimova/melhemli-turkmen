@@ -124,10 +124,10 @@ export default function Project() {
     return (
         <section
             id="process"
-            className="px-9 py-7.5 flex flex-col lg:gap-30 gap-12 lg:py-25 lg:px-25 lg:mb-10"
+            className="px-9 py-7.5 flex flex-col lg:gap-40 gap-12 lg:py-25 lg:px-25"
         >
-            <div className="text-[#0C233E] flex flex-col gap-10 lg:flex-row lg:justify-between items-center lg:gap-55">
-                <h1 className="font-semibold leading-14 text-[48px] lg:text-[80px] lg:leading-tight">
+            <div className="text-[#0C233E] flex flex-col gap-10 lg:flex-row lg:justify-between items-center lg:gap-20">
+                <h1 className="font-semibold leading-14 text-[48px] lg:text-[100px] lg:leading-tight">
                     {t.process.title}
                 </h1>
 
@@ -135,7 +135,7 @@ export default function Project() {
                     {t.process.subtitle}
                 </p>
 
-                <p className="hidden lg:flex lg:max-w-200 lg:text-[20px] lg:text-balance">
+                <p className="hidden lg:flex lg:max-w-250 lg:text-[20px] lg:text-balance">
                     {t.process.subtitle_lg}
                 </p>
             </div>
@@ -166,7 +166,7 @@ export default function Project() {
                                 duration: 0.4,
                                 ease: [0.4, 0, 0.2, 1],
                             }}
-                            className="absolute inset-0 grid gap-6 lg:flex lg:h-80 lg:justify-between"
+                            className="absolute inset-0 grid gap-6 lg:flex lg:h-80 lg:gap-10 lg:justify-center"
                         >
                             {visibleProjects.map((project) => {
                                 const translatedProject =
