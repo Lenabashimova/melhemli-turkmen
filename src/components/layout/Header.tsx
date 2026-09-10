@@ -6,7 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 import type { Language } from "@/i18n";
 
-const languages: Language[] = ["en", "ru", "tm"];
+const languages: Language[] = ["tm", "ru", "en"];
 
 export default function Header(){
     const router = useRouter();

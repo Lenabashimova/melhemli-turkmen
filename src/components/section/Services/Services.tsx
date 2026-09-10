@@ -50,7 +50,7 @@ export default function Services() {
                     </h1>
                 </div>
 
-                <div className="flex flex-col gap-7 lg:grid lg:grid-cols-2 lg:p-6">
+                <div className="flex flex-col gap-7 lg:grid lg:grid-cols-2 lg:gap-x-20">
                     {services.map((service) => {
                         const translated = getTranslatedService(service, language);
                         const shortDescription =
