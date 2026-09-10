@@ -1,7 +1,7 @@
 const TM = {
     header:{
         home:'Baş sahypa',
-        services:'Hyzmatlarymyz',
+        services:'Hyzmatlar',
         projects:'Proýektlarymyz',
         news:'Habarlar',
         contacts:'Habarlaşmak',

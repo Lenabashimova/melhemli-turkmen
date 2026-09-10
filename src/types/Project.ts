@@ -3,6 +3,7 @@ export type ProjectTranslation = {
     projectId: string;
     locale: string;
     title: string;
+    imageSrc?: string;
     description: string | null;
     createdAt?: string;
     updatedAt?: string;

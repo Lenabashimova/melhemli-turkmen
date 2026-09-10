@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import Card from "@/components/ui/Card/Card";
-import { getProjects, apiLocale } from "@/services/services";
+import { getProjects, apiLocale, API_BASE_URL } from "@/services/services";
 import type { Project as ProjectType } from "@/types/Project";
 
 const DESKTOP_PAGE_SIZE = 4;
@@ -126,7 +126,7 @@ export default function Project() {
             id="process"
             className="px-9 py-7.5 flex flex-col lg:gap-40 gap-12 lg:py-30 lg:px-25"
         >
-            <div className="text-[#0C233E] flex flex-col gap-10 lg:flex-row lg:justify-between items-center lg:gap-20">
+            <div className="text-[#222d65] flex flex-col gap-10 lg:flex-row lg:justify-between items-center lg:gap-20">
                 <h1 className="font-semibold leading-14 text-[48px] lg:text-[100px] lg:leading-tight">
                     {t.process.title}
                 </h1>
@@ -142,7 +142,7 @@ export default function Project() {
 
             <div className="flex flex-col gap-4">
                 <div
-                    className="relative overflow-hidden h-50 lg:h-80"
+                    className="relative h-50 lg:min-h-80 mb-40"
                     style={{
                         touchAction: isMobile ? "pan-y" : "auto",
                     }}
@@ -179,15 +179,14 @@ export default function Project() {
                                 const title =
                                     translatedProject?.title ??
                                     project.title;
+                                
+                                    const imageSrc = `${API_BASE_URL}${project.coverImage}`
 
                                 return (
                                     <Card
                                         key={project.id}
                                         title={title}
-                                        className="lg:w-full lg:max-w-150 lg:h-50"
-                                        contentClassName="lg:flex-col lg:text-center lg:gap-6"
-                                        textClassName="lg:text-center text-center lg:text-[20px]"
-                                        linkClassName="lg:hidden"
+                                        imageSrc={imageSrc}
                                     />
                                 );
                             })}

@@ -100,3 +100,5 @@ export async function getPostBySlug(
 
     return response.json();
 }
+
+export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "https://melhemli-turkmen-api.com";

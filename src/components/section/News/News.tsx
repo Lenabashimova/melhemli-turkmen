@@ -134,23 +134,23 @@ export default function News() {
                 </div>
 
                 <div className="flex flex-1 flex-col p-5">
-                    <h2 className="text-[20px] font-semibold leading-7 text-[#0C233E]">
+                    <h2 className="text-[20px] font-semibold leading-7 text-[#222d65]">
                         {post.translation?.title ?? post.title}
                     </h2>
 
-                    <p className="mt-4 text-[16px] leading-6 text-[#0C233E]">
+                    <p className="mt-4 text-[16px] leading-6 text-[#222d65]">
                         {shortDescription}
                     </p>
 
                     <div className="mt-auto flex items-center justify-between gap-3 pt-6">
                         <Link
                             href={`/${language}/news/${post.slug}`}
-                            className="shrink-0 whitespace-nowrap rounded-lg bg-white px-5 py-2 text-[14px] font-medium text-[#1FAC4D] cursor-pointer shadow-md text-center"
+                            className="shrink-0 whitespace-nowrap rounded-lg bg-white px-5 py-2 text-[16px] font-medium text-[#1FAC4D] hover:bg-[#0d5525ce] hover:text-white transition cursor-pointer shadow-md text-center"
                         >
                             {t.testimonials.readMore}
                         </Link>
 
-                        <span className="shrink-0 whitespace-nowrap text-[14px] text-[#1FAC4D]">
+                        <span className="shrink-0 whitespace-nowrap text-[16px] text-[#1FAC4D]">
                             {new Date(
                                 post.publishedAt
                             ).toLocaleDateString("en-GB")}
@@ -171,11 +171,11 @@ export default function News() {
                 {/* Header */}
                 <div className="flex flex-col lg:justify-center items-center gap-4 leading-12">
                     <hr className="border-2 border-[#1FAC4D] w-350 flex mb-30"/>
-                    <h1 className="text-[40px] lg:hidden font-semibold text-[#0C233E]">
+                    <h1 className="text-[40px] lg:hidden font-semibold text-[#222d65]">
                         {t.testimonials.title}
                     </h1>
 
-                    <h1 className="hidden lg:block mb-15 text-[80px] font-semibold text-[#0C233E] pl-2">
+                    <h1 className="hidden lg:block mb-15 text-[80px] font-semibold text-[#222d65] pl-2">
                         {t.testimonials.title}
                     </h1>
 
@@ -198,7 +198,7 @@ export default function News() {
                         <button
                             onClick={loadMore}
                             disabled={loading}
-                            className="rounded-lg bg-[#1FAC4D] px-9 py-4 text-[20px] text-white transition hover:opacity-80 cursor-pointer disabled:opacity-50"
+                            className="rounded-lg bg-[#1FAC4D] px-9 py-4 text-[20px] text-white transition hover:bg-[#0d5525] cursor-pointer disabled:opacity-50"
                         >
                             {loading ? t.testimonials.loading : t.testimonials.loadMore}
                         </button>

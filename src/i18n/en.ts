@@ -2,7 +2,7 @@ const EN = {
     header:{
         home:'Home',
         news:'News',
-        projects:'Projects',
+        projects:'Our Projects',
         services:'Services',
         contacts:'Contacts',
     },
@@ -25,7 +25,7 @@ const EN = {
     },
 
     process:{
-        title:'Projects',
+        title:'Our projects',
         subtitle_lg:'We specialize in construction, installation and design works, delivering residential, industrial and infrastructure projects. Alongside our construction activities, the company is developing a multifunctional livestock complex and operates in the wholesale and retail pharmaceutical sector. By implementing projects across diverse fields, we create modern facilities and expand production capacities, contributing to the economic and infrastructure development of Turkmenistan',
         subtitle:'We specialize in construction and design, develop livestock production and pharmaceutical activities, creating modern facilities and contributing to the development of Turkmenistan'
     },
