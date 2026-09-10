@@ -11,30 +11,12 @@ type CardProps = {
     iconClassName?: string;
 };
 
-export default function Card({
-    title,
-    imageSrc,
-    className,
-    contentClassName,
-    textClassName,
-}: CardProps) {
-    return (
-        <div className="relative w-full flex flex-col lg:h-100 items-center">
-            <div className="relative w-full h-32 lg:h-100 rounded-2xl overflow-hidden">
-                <Image
-                    src={imageSrc}
-                    alt={title}
-                    fill
-                    sizes="(max-width: 1023px) 100vw, 25vw"
-                    className="object-cover"
-                />
-            </div>
-            <div
-                className={`relative z-10 -mt-8 mx-4 flex items-center justify-center rounded-2xl bg-[#222d65] px-6 py-4 lg:px-10 ${className ?? ""} ${contentClassName ?? ""}`}
-            >
-                <h3
-                    className={`text-white text-center font-semibold leading-tight lg:text-[20px] ${textClassName ?? ""}`}
-                >
+
+export default function Card({title, subtitle, className, contentClassName, textClassName, linkClassName}:CardProps){
+    return(
+        <div className={`flex lg:flex-col items-center justify-center gap-6 rounded-3xl px-8 py-8 lg:px-10 bg-[#1fac4e] ${className}`}>
+            <div className={`flex gap-4 items-center text-10 lg:text-[20px] ${contentClassName}`}>
+                <h3 className="text-white flex items-center justify-center text-center font-semibold leading-tight lg:text-[25px]">
                     {title}
                 </h3>
             </div>

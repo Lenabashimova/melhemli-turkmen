@@ -124,7 +124,7 @@ export default function Project() {
     return (
         <section
             id="process"
-            className="px-9 py-7.5 flex flex-col lg:gap-40 gap-12 lg:py-25 lg:px-25"
+            className="px-9 py-7.5 flex flex-col lg:gap-40 gap-12 lg:py-30 lg:px-25"
         >
             <div className="text-[#222d65] flex flex-col gap-10 lg:flex-row lg:justify-between items-center lg:gap-20">
                 <h1 className="font-semibold leading-14 text-[48px] lg:text-[100px] lg:leading-tight">
