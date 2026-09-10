@@ -42,7 +42,7 @@ export default function Services() {
     }, []);
 
     return (
-        <section id="programs" className="bg-[#0C233E] py-12.5 px-12.5 lg:px-25 lg:py-25">
+        <section id="programs" className="bg-[#222d65] py-12.5 px-12.5 lg:px-25 lg:py-25">
             <div className="flex flex-col gap-8 lg:gap-18">
                 <div className="flex flex-col lg:flex-row justify-between lg:items-center gap-4 leading-12">
                     <h1 className="text-[40px] font-semibold text-white lg:text-[80px] lg:leading-tight">
@@ -50,7 +50,7 @@ export default function Services() {
                     </h1>
                 </div>
 
-                <div className="flex flex-col gap-7 lg:grid lg:grid-cols-2 lg:p-6">
+                <div className="flex flex-col gap-7 lg:grid lg:grid-cols-2 lg:gap-x-20">
                     {services.map((service) => {
                         const translated = getTranslatedService(service, language);
                         const shortDescription =
