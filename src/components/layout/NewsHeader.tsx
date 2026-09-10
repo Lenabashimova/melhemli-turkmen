@@ -4,7 +4,7 @@ import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import type { Language } from "@/i18n";
 
-const languages: Language[] = ["en", "ru", "tm"];
+const languages: Language[] = ["tm", "ru", "en"];
 
 export default function NewsHeader() {
     const router = useRouter();
@@ -24,23 +24,23 @@ export default function NewsHeader() {
 
     return (
         <header className="w-full py-6">
-            <div className="flex items-center justify-between cursor-pointer">
+            <div className="flex items-center px-20 justify-between cursor-pointer">
                 <Image
-                    src="/logo-desktop.png"
-                    width={200}
+                    src="/logo-new.png"
+                    width={300}
                     height={190}
                     alt="logo"
                 />
 
-                <div className="flex items-center gap-2 text-[#B42226]">
+                <div className="flex items-center gap-2 text-[#1FAC4D] text-[20px]">
                     {languages.map((lang) => (
                         <button
                             key={lang}
                             onClick={() => changeLanguage(lang)}
-                            className={`border border-[#B42226] rounded-sm p-3 cursor-pointer transition-colors ${
+                            className={`border border-[#1FAC4D] rounded-sm p-3 cursor-pointer transition-colors ${
                                 currentLanguage === lang
-                                    ? "bg-[#B42226] text-white"
-                                    : "hover:bg-[#B42226] hover:text-white"
+                                    ? "bg-[#1FAC4D] text-white"
+                                    : "hover:bg-[#1FAC4D] hover:text-white"
                             }`}
                         >
                             {lang.toUpperCase()}

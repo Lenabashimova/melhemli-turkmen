@@ -57,14 +57,14 @@ export default async function NewsPostPage({
         });
 
     return (
-        <div className="px-9 py-10 lg:px-25 lg:pb-16">
+        <div className="px-9 py-10 lg:px-25 lg:pb-30">
             <NewsHeader/>
             <div className="mx-auto mt-10 max-w-[1950px]">
                 <Link
                     href={`/${lang}`}
-                    className="flex gap-2 text-[14px] font-medium text-[#B42226] hover:opacity-70 transition mb-8"
+                    className="flex gap-2 text-[20px] items-center font-medium text-[#1FAC4D] hover:text-[#1c5830] transition mb-8"
                 >
-                    <ArrowLeft size={18} />
+                    <ArrowLeft size={22} />
                     {t.testimonials.backHome}
                 </Link>
 
@@ -107,7 +107,7 @@ export default async function NewsPostPage({
                     {/* Sidebar */}
                     {sidebarPosts.length > 0 && (
                         <aside>
-                            <h2 className="text-[35px] font-bold text-[#B42226] mb-5">
+                            <h2 className="text-[35px] font-bold text-[#1FAC4D] mb-5">
                                 {t.testimonials.moreNews}
                             </h2>
 
