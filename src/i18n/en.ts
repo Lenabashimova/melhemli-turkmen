@@ -7,8 +7,8 @@ const EN = {
         contacts:'Contacts',
     },
     homepage:{
-        title:'We are building a sustainable future',
-        subtitle:'We specialize in providing high-quality construction services, bringing your ideas to life in real, functional spaces',
+        title:'Building Infrastructure. Developing Production.',
+        subtitle:'We carry out construction and design works, expand production capacities, and develop modern facilities that support the industrial and agricultural development of Turkmenistan',
         button1:'Discover More',
         button2:'Get Started Now'
     },

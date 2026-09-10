@@ -63,13 +63,13 @@ export default function Header(){
                     </div>
                     {/* Desktop */}
                     <div className="hidden w-full items-center justify-between lg:flex bg-white text-[#222D65] lg:border-[#1FAC4D] lg:border-3 rounded-2xl px-11 py-5 mt-15 mx-10">
-                        <Image src="/logo-new.png" width={200} height={40} alt="logo" className="cursor-pointer"/>
+                        <Image src="/logo-new.png" width={250} height={40} alt="logo" className="cursor-pointer"/>
                         <nav className="flex items-center gap-19">
-                            <Link href={'#home'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[24px]">{t.header.home}</Link>
-                            <Link href={'#programs'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[24px]">{t.header.services}</Link>
-                            <Link href={'#process'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[24px]">{t.header.projects}</Link>
-                            <Link href={'#news'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[24px]">{t.header.news}</Link>
-                            <Link href={'#footer'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[24px]">{t.header.contacts}</Link>
+                            <Link href={'#home'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[30px]">{t.header.home}</Link>
+                            <Link href={'#programs'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[30px]">{t.header.services}</Link>
+                            <Link href={'#process'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[30px]">{t.header.projects}</Link>
+                            <Link href={'#news'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[30px]">{t.header.news}</Link>
+                            <Link href={'#footer'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[30px]">{t.header.contacts}</Link>
                         </nav>
                         <div className="flex items-center gap-2 text-[#1FAC4D]">
                             {languages.map((lang) => (

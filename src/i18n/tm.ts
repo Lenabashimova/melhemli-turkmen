@@ -7,8 +7,8 @@ const TM = {
         contacts:'Habarlaşmak',
     },
     homepage:{
-        title:'Biz durnukly geljegi gurýarys',
-        subtitle:'Biz iň ýokary hilli gurluşyk hyzmatlaryny hödürlemäge ýöriteleşýäris we siziň pikirleriňizi hakyky, amatly hem-de işleýän giňişliklere öwürýäris',
+        title:'Infrastruktura döredýäris. Önümçiligi ösdürýäris.',
+        subtitle:'Gurluşyk we taslama işlerini amala aşyrýarys, önümçilik kuwwatlyklaryny ösdürýäris hem-de Türkmenistanyň senagat we oba hojalyk ösüşine hyzmat edýän döwrebap desgalary döredýäris',
         button1:'Has giňişleýin',
         button2:'Häzir başla',
     },
