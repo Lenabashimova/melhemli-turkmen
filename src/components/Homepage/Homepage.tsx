@@ -7,7 +7,7 @@ import { useLanguage } from "@/context/LanguageContext";
 export default function Homepage() {
     const { t } = useLanguage();
     return(
-            <div id="home" className="relative bg-linear-to-l lg:bg-cover lg:bg-center lg:bg-no-repeat lg:bg-[url('/back-new.jpg')] from-[rgba(12,62,15,0.5)] to-[rgba(12,35,62,1)]">
+            <div id="home" className="relative bg-linear-to-l lg:bg-cover lg:bg-center lg:bg-no-repeat lg:bg-[url('/back-new.jpg')] from-[rgba(12,62,15,0.5)] to-[#077227]">
                 <div className="hidden pointer-events-none lg:block absolute z-0 inset-0 lg:bg-linear-to-r lg:from-[#052e13d7] lg:via-[rgba(13,77,34,0.36)] lg:to-[rgba(31,172,77,0)] "></div>
                 <div className="relative">
                     <section className="px-9">
