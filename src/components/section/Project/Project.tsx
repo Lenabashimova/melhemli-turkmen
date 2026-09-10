@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import Card from "@/components/ui/Card/Card";
-import { getProjects, apiLocale } from "@/services/services";
+import { getProjects, apiLocale, API_BASE_URL } from "@/services/services";
 import type { Project as ProjectType } from "@/types/Project";
 
 const DESKTOP_PAGE_SIZE = 4;
@@ -142,7 +142,7 @@ export default function Project() {
 
             <div className="flex flex-col gap-4">
                 <div
-                    className="relative overflow-hidden h-50 lg:h-80"
+                    className="relative h-50 lg:min-h-80 mb-40"
                     style={{
                         touchAction: isMobile ? "pan-y" : "auto",
                     }}
@@ -179,15 +179,14 @@ export default function Project() {
                                 const title =
                                     translatedProject?.title ??
                                     project.title;
+                                
+                                    const imageSrc = `${API_BASE_URL}${project.coverImage}`
 
                                 return (
                                     <Card
                                         key={project.id}
                                         title={title}
-                                        className="lg:w-full lg:max-w-150 lg:h-50"
-                                        contentClassName="lg:flex-col lg:text-center lg:gap-6"
-                                        textClassName="lg:text-center text-center lg:text-[20px]"
-                                        linkClassName="lg:hidden"
+                                        imageSrc={imageSrc}
                                     />
                                 );
                             })}

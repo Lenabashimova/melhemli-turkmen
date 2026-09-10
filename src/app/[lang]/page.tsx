@@ -14,8 +14,8 @@ export default function Home() {
     <>
       <Homepage/>
       {/* <Benefits/> */}
-      <Services/>
       <Project/>
+      <Services/>
       <News/>
     </>
   );

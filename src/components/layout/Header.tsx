@@ -40,8 +40,8 @@ export default function Header(){
 
     return(
         <>
-            <header className={isNewsPage ? "" : "lg:sticky lg:top-0 lg:z-50 lg:h-0"}>
-                <div className="sm:mx-auto flex h-20 items-center justify-between px-6">
+            <header className={isNewsPage ? "" : "lg:sticky lg:top-0 lg:z-50 lg:h-0 "}>
+                <div className="sm:mx-auto flex h-20 items-center justify-between ">
                     {/* Mobile */}
                     <div className="flex w-full items-center justify-between lg:hidden">
                         <Image src="/logo-new.png" width={119} height={34} alt="logo"/>
@@ -62,12 +62,12 @@ export default function Header(){
                         </div>
                     </div>
                     {/* Desktop */}
-                    <div className="hidden w-full items-center justify-between lg:flex bg-white text-[#222D65] lg:border-[#1FAC4D] lg:border-3 rounded-2xl px-11 py-5 mt-15 mx-10">
+                    <div className="hidden w-full items-center justify-between lg:flex bg-white text-[#222D65] lg:border-[#1FAC4D] lg:border-3 rounded-2xl px-19 py-5 mt-15 shadow-[0_8px_40px_rgba(0,0,0,0.5)] ">
                         <Image src="/logo-new.png" width={250} height={40} alt="logo" className="cursor-pointer"/>
                         <nav className="flex items-center gap-19">
                             <Link href={'#home'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[30px]">{t.header.home}</Link>
-                            <Link href={'#programs'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[30px]">{t.header.services}</Link>
                             <Link href={'#process'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[30px]">{t.header.projects}</Link>
+                            <Link href={'#programs'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[30px]">{t.header.services}</Link>
                             <Link href={'#news'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[30px]">{t.header.news}</Link>
                             <Link href={'#footer'} className="cursor-pointer hover:[text-shadow:0_0_0_currentColor] hover:text-[#1FAC4D] text-[30px]">{t.header.contacts}</Link>
                         </nav>

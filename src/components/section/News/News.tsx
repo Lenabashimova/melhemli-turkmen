@@ -145,7 +145,7 @@ export default function News() {
                     <div className="mt-auto flex items-center justify-between gap-3 pt-6">
                         <Link
                             href={`/${language}/news/${post.slug}`}
-                            className="shrink-0 whitespace-nowrap rounded-lg bg-white px-5 py-2 text-[16px] font-medium text-[#1FAC4D] cursor-pointer shadow-md text-center"
+                            className="shrink-0 whitespace-nowrap rounded-lg bg-white px-5 py-2 text-[16px] font-medium text-[#1FAC4D] hover:bg-[#0d5525ce] hover:text-white transition cursor-pointer shadow-md text-center"
                         >
                             {t.testimonials.readMore}
                         </Link>
@@ -198,7 +198,7 @@ export default function News() {
                         <button
                             onClick={loadMore}
                             disabled={loading}
-                            className="rounded-lg bg-[#1FAC4D] px-9 py-4 text-[20px] text-white transition hover:opacity-80 cursor-pointer disabled:opacity-50"
+                            className="rounded-lg bg-[#1FAC4D] px-9 py-4 text-[20px] text-white transition hover:bg-[#0d5525] cursor-pointer disabled:opacity-50"
                         >
                             {loading ? t.testimonials.loading : t.testimonials.loadMore}
                         </button>
